@@ -131,7 +131,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.6rem;
-  letter-spacing: 0.75;
+  letter-spacing: 0.75px;
   color: #cf711f;
   display: inline-block;
   margin-bottom: 1.6rem;
@@ -150,7 +150,7 @@ body {
 
 .tertiary-heading {
   font-size: 3rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   line-height: 1.2;
 }
 
@@ -258,7 +258,6 @@ body {
 }
 
 .featured-section {
-  background-color: #ffffff;
   padding: 4.8rem 0 3.2rem 0;
 }
 
@@ -300,6 +299,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
+p,
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
@@ -339,4 +339,476 @@ body {
   padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
+}
+
+/*---------------------
+    MEALS SECTION
+----------------------*/
+.meals-section {
+  padding: 9.6rem 0;
+}
+
+.meals-section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.meal-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 6.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.meal-card {
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  transition: all 0.4s;
+}
+
+.meal-card:hover,
+.meal-card:active {
+  transform: translateY(-1.2rem);
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-description-box {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.meal-tag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+}
+
+.vegetarian {
+  background-color: #51cf66;
+}
+
+.vegan {
+  background-color: #94d82d;
+}
+
+.paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.nutri-list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.meal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.check {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-items {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #e67e22;
+  padding: 2px;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: none;
+}
+
+.all-recipe {
+  text-align: center;
+}
+
+/*---------------------
+    TESTIMONIALS SECTION
+----------------------*/
+.testimonials-section {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+  row-gap: 4.8rem;
+}
+
+.customer-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.customer-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-img:hover,
+.gallery-img:active {
+  transform: scale(1.1);
+}
+
+/*---------------------
+    PRICING SECTION
+----------------------*/
+
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.starter-plan {
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+  justify-self: end;
+}
+
+.complete-plan {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-plan::after {
+  position: absolute;
+  content: "Best Value";
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+  top: 6%;
+  right: -18%;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-header p {
+  line-height: normal;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #cf711f;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.start-plan {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-side-note {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.features {
+  display: flex;
+  align-self: center;
+  gap: 4.8rem;
+}
+
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+  padding: 1.6rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+/*---------------------
+    CTA SECTION
+----------------------*/
+.cta-section {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 15%);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta-heading .secondary-heading {
+  margin-bottom: 3.2rem;
+  color: inherit;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+}
+
+.form-btn {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  width: 100%;
+  padding: 1.2rem;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*---------------------
+    FOOTER SECTION
+----------------------*/
+.footer-section {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+}
+.address {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
